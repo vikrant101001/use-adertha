@@ -8,4 +8,4 @@ npm install
 npm run dev
 ```
 
-Deployed to GitHub Pages by `.github/workflows/pages.yml` (enable Settings → Pages → Source: GitHub Actions).
+Deployed on Vercel (free): import this repo in Vercel; it auto-detects Vite and deploys every push to `main`.
