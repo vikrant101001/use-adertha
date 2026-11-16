@@ -1,0 +1,55 @@
+:root {
+  --bg: #15171d;
+  --glow: #232735;
+  --text: #d9dbe1;
+  --muted: #8a8f9c;
+  --accent: #a9bbdb;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; margin: 0; }
+html, body, #root { height: 100%; }
+
+body {
+  background: radial-gradient(ellipse at 50% 35%, var(--glow) 0%, var(--bg) 65%) fixed, var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main {
+  min-height: 100%;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1.25rem;
+  padding: 16px;
+  text-align: center;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
+  letter-spacing: 0.25em;
+  text-indent: 0.25em;
+  color: var(--accent);
+}
+
+.tagline { color: var(--muted); font-size: 1.15rem; letter-spacing: 0.04em; }
+
+.download {
+  margin-top: 1rem;
+  padding: 0.85rem 1.75rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--bg);
+  background: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.download:hover { background: transparent; color: var(--accent); }
+
+.others { color: var(--muted); font-size: 0.9rem; }
+.others a { color: var(--muted); }
+.others a:hover { color: var(--accent); }
